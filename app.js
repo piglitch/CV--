@@ -34,12 +34,3 @@ cvForm.addEventListener('submit', (e) => {
 
 //--------------------MongoDB-----------------------//
 
-var mongo = require('mongodb');
-var mongoClient = require('mongodb').mongoClient;
-var url = "mongodb://localhost:27017/myDB";
-
-mongoClient.connect(url, function(err, db){
-    if (err) throw error;
-    console.log('Database created');
-    db.close;
-});
