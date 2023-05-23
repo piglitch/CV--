@@ -31,3 +31,15 @@ cvForm.addEventListener('submit', (e) => {
     // Display the generated CV output
     cvOutput.innerHTML = 'Generated CV will be displayed here.';
 });
+
+//--------------------MongoDB-----------------------//
+
+var mongo = require('mongodb');
+var mongoClient = require('mongodb').mongoClient;
+var url = "mongodb://localhost:27017/myDB";
+
+mongoClient.connect(url, function(err, db){
+    if (err) throw error;
+    console.log('Database created');
+    db.close;
+});
