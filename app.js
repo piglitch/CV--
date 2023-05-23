@@ -32,5 +32,5 @@ cvForm.addEventListener('submit', (e) => {
     cvOutput.innerHTML = 'Generated CV will be displayed here.';
 });
 
-//--------------------MongoDB-----------------------//
+
 
